@@ -6,8 +6,8 @@ import React from 'react';
 import useLogin from '../../../hooks/useLogin';
 
 const LoginBtn = () => {
-    let { inputId, inputPwd, login } = useLogin()
-    let navigate = useNavigate()
+    const { inputId, inputPwd, login } = useLogin()
+    const navigate = useNavigate()
     const [isLogin, setIsLogin]= useRecoilState(loggedInState)
     const [modalOpen, setModalOpen] = React.useState(false);
     

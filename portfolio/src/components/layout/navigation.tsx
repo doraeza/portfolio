@@ -2,7 +2,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import logo from './../../assets/logo.png';
 import { useRecoilState } from 'recoil';
 import LoginBtn from './login';
-import { loggedInState } from '../../atoms';
+import { loggedInState } from '../../store/atoms';
 
 const Navigation = () => {
   let navigate = useNavigate()
