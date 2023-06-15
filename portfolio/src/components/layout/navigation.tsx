@@ -10,15 +10,6 @@ const Navigation = () => {
   const [isLogin, setIsLogin]= useRecoilState(loggedInState)
 
   
-  // const loginToggle = () => {
-  //   if(isLogin === false){
-  //     setIsLogin(true)
-  //   } else {
-  //     setIsLogin(false)
-  //     goHome()
-  //   }
-  // }
-
   return (
     <nav className="bg-blue-300 sm:bg-white px-2 sm:px-4 py-2.5 dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
       <div className="container flex flex-wrap items-center justify-between mx-auto">
