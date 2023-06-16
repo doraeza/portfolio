@@ -2,3 +2,90 @@
 /* @tailwind pages; */
 @tailwind components;
 @tailwind utilities;
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+body {
+    
+  height: calc(100vh - 8em);
+  color: rgba(255,255,255,.75);
+  font-family: 'Anonymous Pro', monospace;  
+  background-color: rgb(25,25,25);  
+  }
+  .main {
+    padding: 2em;
+  }
+  .typewriter{
+    width: fit-content;
+  }
+  .Desc{
+    color: #9bd65cd6;
+    text-shadow: 0 0 10px #9bd65c;
+  }
+  .vLine{
+    width:2px;
+    border-right: .15em solid #33FF33;
+  }
+
+  .typewriter p{
+    color: #66FF66;
+    text-shadow: 0 0 10px #33FF33;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid #33FF33; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    width: fit-content;
+    animation: 
+      typing 0.6s steps(25),
+      blink-caret 500ms steps(44) forwards ;
+      
+  }
+  .typewriter .goD{
+    color: #66FF66;
+    text-shadow: 0 0 10px #33FF33;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid #33FF33; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    width: fit-content;
+    animation: 
+      typing 0.6s steps(25),
+      blink-end 500ms steps(44) infinite ;
+      
+  }
+
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width:100%; } 
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: #33FF33}
+    20% {border-color: rgb(25,25,25);}
+    40% {border-color: #33FF33}
+    60% {border-color: rgb(25,25,25);}
+    80% {border-color: #33FF33}
+    100% {border-color: rgb(25,25,25);}
+  }
+   /* The typewriter cursor effect */
+   @keyframes blink-end {
+    from, to { border-color: #33FF33}
+    50% {border-color: rgb(25,25,25);}
+    
+  }
+
+  .loading--cycle {
+    width: 100px;
+    height: 100px;
+    border: 5px solid white;
+    border-radius: 50%;
+    border-top-color: royalblue;
+    animation: spin 0.8s infinite ease-in-out;
+  }
+  @keyframes spin {
+    to {
+      transform: rotate(1turn);
+    }
+  }
