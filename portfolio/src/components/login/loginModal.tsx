@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 
-const ModalBasic = ({ setModalOpen, inputId, inputPwd, login, loginToggle}: {setModalOpen:React.Dispatch<React.SetStateAction<boolean>>,inputId:any, inputPwd:any, login:any, loginToggle:any}) =>{
+const ModalBasic = ({ setModalOpen, inputId, inputPwd, loginToggle}: {setModalOpen:React.Dispatch<React.SetStateAction<boolean>>,inputId:any, inputPwd:any, login:any, loginToggle:any}) =>{
     const closeModal = () => {
     setModalOpen(false);
     };

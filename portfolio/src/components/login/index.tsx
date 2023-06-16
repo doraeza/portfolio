@@ -1,9 +1,9 @@
 import { useRecoilState } from 'recoil';
-import { loggedInState } from '../../../store/atoms';
+import { loggedInState } from '../../store/atoms';
 import { useNavigate } from 'react-router-dom';
 import LoginModal from './loginModal';
 import React from 'react';
-import useLogin from '../../../hooks/useLogin';
+import useLogin from '../../hooks/useLogin';
 
 const LoginBtn = () => {
     const { inputId, inputPwd, login } = useLogin()

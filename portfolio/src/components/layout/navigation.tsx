@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import logo from './../../assets/logo.png';
 import { useRecoilState } from 'recoil';
-import LoginBtn from './login';
+import LoginBtn from '../login';
 import { loggedInState } from '../../store/atoms';
 
 const Navigation = () => {
