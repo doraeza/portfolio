@@ -1,5 +1,5 @@
-import Router, { useRouter } from "next/router";
-import React from "react";
+// import Router, { useRouter } from "next/router";
+// import React from "react";
 
 
 function Footer() {
@@ -10,10 +10,10 @@ function Footer() {
   // };
   return (
       <div className="Desc absolute bottom-5 text-center w-full">
-        © 2022 - developed by jaewu Yu
+        © 2023 - developed by jaewu Yu
         <div className=" right-0 pr-2">
-<a className="github-button" href="https://github.com/yujaewoo">github</a>
-          </div>
+            <a className="github-button" href="https://github.com/yujaewoo">github</a>
+        </div>
       </div>
   );
 }

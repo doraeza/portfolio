@@ -10,7 +10,6 @@ const DesktopLayout = ({ children }: { children: React.ReactNode }) => {
             <div className="flex flex-col justify-between">
                 <Header />
                 <Body>{children}</Body>
-                <div></div>
             </div>
             <Footer />
         </>

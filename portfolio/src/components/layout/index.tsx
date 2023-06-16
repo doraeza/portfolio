@@ -1,6 +1,6 @@
 // import Aside from "@components/aside";
 import React from "react"
-import MobileLayout from "./mobile.layout"
+// import MobileLayout from "./mobile.layout"
 import DesktopLayout from "./desktop.layout"
 import { useMediaQuery } from "react-responsive"
 
@@ -13,17 +13,17 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         }
     }
 
-    const Mobile = () => {
-        const isMobile = useMediaQuery({ maxWidth: 767 })
-        if (isMobile) {
-            return <MobileLayout>{children}</MobileLayout>
-        }
-    }
+    // const Mobile = () => {
+    //     const isMobile = useMediaQuery({ maxWidth: 767 })
+    //     if (isMobile) {
+    //         return <MobileLayout>{children}</MobileLayout>
+    //     }
+    // }
 
     return (
         <div>
-            {Desktop && Desktop()}
-            {Mobile && Mobile()}
+            {Desktop()}
+            {/* {Mobile && Mobile()} */}
         </div>
     )
 }

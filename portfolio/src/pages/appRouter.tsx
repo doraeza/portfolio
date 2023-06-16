@@ -4,7 +4,6 @@ import ErrorBoundary from '../components/common/errorBounday';
 import Spinner from '../components/common/Spinner';
 
 //component
-import Layout from '../components/layout';
 import Navigation from '../components/layout/navigation';
 //page
 const Main = lazy(() => import('./main'));
@@ -19,7 +18,6 @@ const AppRouter = () => {
     <>
       <BrowserRouter>
         <Navigation />
-        <Layout>
           <ErrorBoundary>
           <Suspense fallback={<Spinner />} >
             <Routes>
@@ -32,7 +30,6 @@ const AppRouter = () => {
             </Routes>
           </Suspense>
           </ErrorBoundary>
-        </Layout>
       </BrowserRouter>
     </>
   );
