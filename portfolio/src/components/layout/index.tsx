@@ -2,6 +2,7 @@
 import React from "react"
 import MobileLayout from "./mobile.layout"
 import DesktopLayout from "./desktop.layout"
+import { useMediaQuery } from "react-responsive"
 
 export default function Layout({ children }: { children: React.ReactNode }) {
     
