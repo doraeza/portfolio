@@ -1,4 +1,5 @@
 // src/layouts/desktop_layout.js
+import CustomButton from "../common/CustomButton"
 import Body from "./body"
 import Footer from "./footer"
 import Header from "./header"
@@ -9,6 +10,7 @@ const DesktopLayout = ({ children }: { children: React.ReactNode }) => {
         <>
             <div className="flex flex-col justify-between">
                 <Header />
+                <CustomButton text="aaa"/>
                 <Body>{children}</Body>
             </div>
             <Footer />
