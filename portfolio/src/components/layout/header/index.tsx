@@ -5,9 +5,9 @@ const Header: React.FC = () => {
  
   return (
     <div >
-      <div className="">
+      <div className="Desc absolute bottom-5 text-center w-full">
        
-        {/* <h1 onClick={goHome}>Front-Endd Developer</h1> */}
+        <h1 >YU JAE WU</h1>
        
       </div>
     </div>

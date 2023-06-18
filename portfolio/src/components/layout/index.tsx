@@ -3,6 +3,7 @@ import React from "react"
 // import MobileLayout from "./mobile.layout"
 import DesktopLayout from "./desktop.layout"
 import { useMediaQuery } from "react-responsive"
+import MobileLayout from "./mobile.layout"
 
 export default function Layout({ children }: { children: React.ReactNode }) {
     
@@ -10,15 +11,12 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         const isDesktop = useMediaQuery({ minWidth: 768 })
         if (isDesktop) {
             return <DesktopLayout>{children}</DesktopLayout>
+        }else{
+            return <MobileLayout>{children}</MobileLayout>
         }
     }
 
-    // const Mobile = () => {
-    //     const isMobile = useMediaQuery({ maxWidth: 767 })
-    //     if (isMobile) {
-    //         return <MobileLayout>{children}</MobileLayout>
-    //     }
-    // }
+    
 
     return (
         <div>

@@ -4,13 +4,7 @@ import Layout from './components/layout'
 import App from './pages/App'
 import './styles/App.css'
 import { QueryClient, QueryClientProvider } from "react-query";
-import {
-  RecoilRoot,
-  atom,
-  selector,
-  useRecoilState,
-  useRecoilValue,
-} from 'recoil';
+import { RecoilRoot } from 'recoil';
 const queryClient = new QueryClient();
 
 
