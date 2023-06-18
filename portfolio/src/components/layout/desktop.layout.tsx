@@ -9,9 +9,9 @@ const DesktopLayout = ({ children }: { children: React.ReactNode }) => {
     return (
         <>
             <div className="flex flex-col justify-between">
-                <Header />
+                {/* <Header /> */}
                 <CustomButton text="CustomButton"/>
-                <Body>{children}</Body>
+                {/* <Body>{children}</Body> */}
             </div>
             <Footer />
         </>
