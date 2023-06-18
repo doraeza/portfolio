@@ -1,4 +1,4 @@
-import '../styles/index.css';
+import '../styles/globals.css';
 import AppRouter from './appRouter';
 
 import ErrorBoundary from '../components/common/errorBounday';
