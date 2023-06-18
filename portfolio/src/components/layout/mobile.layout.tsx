@@ -7,11 +7,10 @@ import React from "react"
 const MobileLayout = ({ children }: { children: React.ReactNode }) => {
     return (
         <>
-            <div className="flex flex-col justify-between">
+            <section>
                 <Header />
                 <Body>{children}</Body>
-                <div></div>
-            </div>
+            </section>
             <Footer />
         </>
     )

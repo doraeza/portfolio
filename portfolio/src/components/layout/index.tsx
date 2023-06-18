@@ -16,12 +16,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         }
     }
 
+    return Desktop()
     
-
-    return (
-        <div>
-            {Desktop()}
-            {/* {Mobile && Mobile()} */}
-        </div>
-    )
 }

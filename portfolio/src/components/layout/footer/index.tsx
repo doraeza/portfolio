@@ -9,12 +9,14 @@ function Footer() {
   //   Router.push(`/main`);
   // };
   return (
-      <div className="Desc absolute bottom-5 text-center w-full">
-        © 2023 - developed by jaewu Yu
-        {/* <div className=" right-0 pr-2">
+      <footer>
+        <p className="Desc text-center w-full">
+          © 2023 - developed by jaewu Yu
+        </p>
+        {/* <div className=" right-0 pr-2ㄴ">
             <a className="github-button" href="https://github.com/yujaewoo">github</a>
         </div> */}
-      </div>
+      </footer>
   );
 }
 

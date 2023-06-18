@@ -8,11 +8,11 @@ import React from "react"
 const DesktopLayout = ({ children }: { children: React.ReactNode }) => {
     return (
         <>
-            <div className="flex flex-col justify-between h-screen">
+            <section>
                 <Header />
                 <CustomButton text="CustomButton"/>
                 <Body>{children}</Body>
-            </div>
+            </section>
             <Footer />
         </>
     )

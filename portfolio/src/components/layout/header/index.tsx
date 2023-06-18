@@ -5,7 +5,7 @@ const Header: React.FC = () => {
  
   return (
     <div >
-      <div className="Desc absolute bottom-5 text-center w-full">
+      <div className="Desc text-center w-full">
        
         <h1 >YU JAE WU</h1>
        
