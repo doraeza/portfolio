@@ -17,6 +17,11 @@ body {
   .typewriter{
     width: fit-content;
   }
+  .DescBig{
+    font-size: xx-large;
+    color: #9bd65cd6;
+    text-shadow: 0 0 10px #9bd65c;
+  }
   .Desc{
     color: #9bd65cd6;
     text-shadow: 0 0 10px #9bd65c;
