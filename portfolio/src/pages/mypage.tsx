@@ -1,9 +1,9 @@
-import MyPageCompo from "../components/mypage"
+// import MyPageCompo from "../components/mypage"
 
 const MyPage = () => {
     return (
         <div>
-            <MyPageCompo />
+            {/* <MyPageCompo /> */}
         </div>
     )
 }

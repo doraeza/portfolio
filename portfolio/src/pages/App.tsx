@@ -1,10 +1,15 @@
+import CustomButton from '../components/common/CustomButton';
 import '../styles/globals.css';
 
 
 function App() {
   return (
       // <AppRouter />
-      <div>asdfasdf</div>
+      <>
+      <div>Main body</div>
+      <CustomButton text="CustomButton"/>
+      </>
+
   )
 }
 

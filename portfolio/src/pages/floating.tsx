@@ -1,10 +1,10 @@
-import Floating from "../components/floating";
+// import Floating from "../components/floating";
 
 
 const FloatingPage = () => {
   return (
       <div className="top-10">
-            <Floating />
+            {/* <Floating /> */}
       </div>
      )
 };

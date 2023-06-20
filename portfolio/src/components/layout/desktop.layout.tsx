@@ -1,5 +1,4 @@
 // src/layouts/desktop_layout.js
-import CustomButton from "../common/CustomButton"
 import Body from "./body"
 import Footer from "./footer"
 import Header from "./header"
@@ -10,7 +9,6 @@ const DesktopLayout = ({ children }: { children: React.ReactNode }) => {
         <>
             <section>
                 <Header />
-                <CustomButton text="CustomButton"/>
                 <Body>{children}</Body>
             </section>
             <Footer />
