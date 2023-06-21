@@ -12,7 +12,7 @@ const CustomButton = ({text, pressFuction}:{text:string, pressFuction?:(event: M
         return (
             <div style={{border:"1px soild"}}>
                 <button style={{background: "#191919", cursor: "pointer", borderRadius: "9px", border:"solid 1px #9bd65cd6"}} onClick={()=>pressFuction}>
-                <p  className="Desc absolute bottom-5 text-center w-full bg-black" > {text}</p>
+                <p  className="Desc absolute bottom-5 text-center w-full" > {text}</p>
                 </button>
             </div>
         )    
