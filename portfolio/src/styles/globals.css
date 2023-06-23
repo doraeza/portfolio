@@ -14,8 +14,18 @@ body {
   .main {
     padding: 2em;
   }
+  .headline {
+    padding-left: 32px;
+    padding-right: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .threeIcon {
+  }
   .typewriter{
     width: fit-content;
+    
   }
   .DescBig{
     font-size: xx-large;

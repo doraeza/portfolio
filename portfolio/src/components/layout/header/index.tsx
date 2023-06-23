@@ -1,14 +1,15 @@
 import React from "react";
+import BallCanvas from "../../canvas";
 
 
 const Header: React.FC = () => {
  
   return (
     <div >
-      <div className="Desc text-center w-full">
-       
-        <h1 >YU JAE WU</h1>
-       
+      <div className="headline">
+          <BallCanvas />
+          <h1 >YU JAE WU</h1>
+        
       </div>
     </div>
   );

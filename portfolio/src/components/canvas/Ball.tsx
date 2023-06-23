@@ -7,8 +7,8 @@ const Ball = () => {
       <Float speed={3} rotationIntensity={2} floatIntensity={3}>
         <directionalLight position={[0, 0, 0.1]} />
         <ambientLight intensity={0.25} />
-        <mesh castShadow receiveShadow scale={2.5}>
-          <icosahedronGeometry args={[1, 2]} />
+        <mesh castShadow receiveShadow scale={1.2}>
+          <dodecahedronGeometry args={[1, 1]} />
           <meshStandardMaterial
             color="#9bd65c"
             polygonOffset
