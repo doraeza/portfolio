@@ -15,11 +15,11 @@ body {
     padding: 2em;
   }
   .headline {
-    padding-left: 32px;
-    padding-right: 32px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: flex; 
+    margin-top: 3.5rem; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 2.5rem; 
   }
   .threeIcon {
   }

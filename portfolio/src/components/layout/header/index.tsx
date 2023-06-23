@@ -5,11 +5,9 @@ import BallCanvas from "../../canvas";
 const Header: React.FC = () => {
  
   return (
-    <div >
-      <div className="headline">
+    <div className="headline">
+      <div className="w-28 h-28">
           <BallCanvas />
-          <h1 >YU JAE WU</h1>
-        
       </div>
     </div>
   );
