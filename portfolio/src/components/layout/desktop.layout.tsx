@@ -8,7 +8,9 @@ const DesktopLayout = ({ children }: { children: React.ReactNode }) => {
     return (
         <>
             <section>
+                <div className="pb-10">
                 <Header />
+                </div>
                 <Body>{children}</Body>
             </section>
             <Footer />
