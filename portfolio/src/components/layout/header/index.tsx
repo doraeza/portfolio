@@ -54,7 +54,7 @@ const Header: React.FC = () => {
             <li
               key={content.id}
               className={`${
-                active === content.title ? 'text-french' : 'text-eerieBlack'
+                active === content.title ? 'italic' : 'italic'
               } hover:text-taupe text-[21px] font-medium font-mova 
                 uppercase tracking-[3px] cursor-pointer nav-links`}
               onClick={() => setActive(content.title)}>
@@ -87,7 +87,7 @@ const Header: React.FC = () => {
                     id={content.id}
                     key={content.id}
                     className={`${
-                      active === content.title ? 'text-french' : 'text-eerieBlack'
+                      active === content.title ? 'italic' : 'italic'
                     } text-[88px] font-bold font-arenq 
                       uppercase tracking-[1px] cursor-pointer`}
                     onClick={() => {
