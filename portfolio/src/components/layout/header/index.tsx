@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import logo from '../../../assets/logo.png'
 import hmb from '../../../assets/hmb.png'
 import close from '../../../assets/close.png'
@@ -27,8 +26,7 @@ const Header: React.FC = () => {
       className={`sm:px-16 px-6 w-full flex items-center py-2 fixed 
       top-0 z-20 bg-flashWhite sm:opacity-[0.97] xxs:h-[12vh]`}>
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
-        <Link
-          to="/"
+        <a href="/" target="_blank" rel="noopener noreferrer"
           className="flex items-center gap-2"
           onClick={() => {
             setActive('');
@@ -48,13 +46,13 @@ const Header: React.FC = () => {
             className="sm:w-[90px] sm:h-[90px] w-[85px] h-[85px] -ml-[0.6rem] object-contain"
           /> */}
           yujaewu
-        </Link>
+        </a>
         <ul className="list-none hidden sm:flex flex-row gap-14 mt-2">
           {headerLinks.map((content) => (
             <li
               key={content.id}
               className={`${
-                active === content.title ? 'italic' : 'italic'
+                active === content.title ? 'text-slate-400' : 'text-black'
               } hover:text-taupe text-[21px] font-medium font-mova 
                 uppercase tracking-[3px] cursor-pointer nav-links`}
               onClick={() => setActive(content.title)}>
@@ -87,7 +85,7 @@ const Header: React.FC = () => {
                     id={content.id}
                     key={content.id}
                     className={`${
-                      active === content.title ? 'italic' : 'italic'
+                      active === content.title ? 'text-slate-400' : 'text-text-black'
                     } text-[88px] font-bold font-arenq 
                       uppercase tracking-[1px] cursor-pointer`}
                     onClick={() => {
