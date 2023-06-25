@@ -1,7 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 export const content = [
-  './src/pages/**/*.{js,ts,jsx,tsx}',
-  './src/components/**/*.{js,ts,jsx,tsx}',
+  // './src/pages/**/*.{js,ts,jsx,tsx}',
+  // './src/components/**/*.{js,ts,jsx,tsx}',
+  './src/**/*.{html,js,ts,jsx,tsx}'
 ];
 export const theme = {
   screens: {
@@ -18,12 +19,7 @@ export const theme = {
     '16': '4rem',
   },
   extend: {
-    // backgroundImage: (theme:any) => ({
-    //   // 'geometry3': "url('../public/images/paint1.png')",
-    //   // 'header': "url('../public/images/paintB1.png')",
-    //   // 'geometry3': "url('../public/images/paintB2.png')",
-    //   // 'header': "url('../public/images/header.png')",
-    // })
+    
   },
 };
 export const plugins = [];

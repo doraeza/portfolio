@@ -1,8 +1,6 @@
 @tailwind base;
-/* @tailwind pages; */
 @tailwind components;
-@tailwind utilities;
-/* @import 'https://fonts.googleapis.com/css?family=Anonymous+Pro'; */
+@tailwind utilities;`
 
 body {
     

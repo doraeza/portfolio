@@ -2,7 +2,8 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import Layout from './components/layout'
 import App from './pages/App'
-import './styles/App.css'
+import './styles/main.css';
+
 import { QueryClient, QueryClientProvider } from "react-query";
 import { RecoilRoot } from 'recoil';
 const queryClient = new QueryClient();
