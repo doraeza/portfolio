@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from '../../../assets/logo.png'
+// import logo from '../../../assets/logo.png'
 import hmb from '../../../assets/hmb.png'
 import close from '../../../assets/close.png'
 
@@ -32,11 +32,11 @@ const Header: React.FC = () => {
             setActive('');
             window.scrollTo(0, 0);
           }}>
-          <img
+          {/* <img
             src={logo} // your logo comes here
             alt="logo"
             className="sm:w-[50px] sm:h-[50px] w-[45px] h-[45px] object-contain"
-          />
+          /> */}
 
           {/* if you have text you want besides your logo it comes here.
           Otherwise delete this if you don't need it. */}

@@ -7,12 +7,12 @@ import React from "react"
 const DesktopLayout = ({ children }: { children: React.ReactNode }) => {
     return (
         <>
-            <section>
+            <Body>
                 <div className="pb-10">
                 <Header />
                 </div>
-                <Body>{children}</Body>
-            </section>
+                <div className="body">{children}</div>
+            </Body>
             <Footer />
         </>
     )

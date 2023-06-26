@@ -1,8 +1,12 @@
 import React from "react";
+/** @jsxImportSource @emotion/react */
+import { css } from "@emotion/react";
 
 export default function Body({children}:{children: React.ReactNode}) {
     return (
-        <div className="w-full p-0 mr-8 max-h-full">
+        <div css={css({
+            backgroundColor: "yellow",
+          })}>
             {children}
         </div>
     )

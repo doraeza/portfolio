@@ -2,8 +2,7 @@
 @tailwind components;
 @tailwind utilities;`
 
-body {
-    
+  .body {  
   height: calc(100vh - 8em);
   color: rgba(255,255,255,.75);
   font-family: 'Anonymous Pro', monospace;  
