@@ -1,12 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 // import logo from '../../../assets/logo.png'
-import close from '../../../assets/close.png'
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
 
 const Header: React.FC = () => {
-  const [toggle, setToggle] = useState(false);
-  const [active, setActive] = useState('');
+  // const [toggle, setToggle] = useState(false);
+  // const [active, setActive] = useState('');
   
   const headerLinks = [
     {
@@ -24,7 +23,7 @@ const Header: React.FC = () => {
   ];
   return (
     <header css={css({
-      position: "relative",
+      position: "fixed",
       left: 0,
       top: 0,
       width: "100%",
@@ -32,7 +31,13 @@ const Header: React.FC = () => {
       backgroundColor: "rgb(25,25,25)",
   })}>
       <div css={css({
-        display: "flex"
+        display: "flex",
+        width: "96%",
+        maxWidth: "1100px",
+        height: "100%",
+        margin: "0 auto",
+        alignItems: "center",
+        justifyContent: "space-between"
       })}>
         <div className="DescBig">
             yujaewu

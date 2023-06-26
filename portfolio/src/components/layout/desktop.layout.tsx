@@ -10,13 +10,14 @@ const DesktopLayout = ({ children }: { children: React.ReactNode }) => {
         <>
             <div css={css({
                 backgroundColor: "rgb(25,25,25)",
+                paddingTop: "80px"
             })}>
-                <div className="pb-10">
                 <Header />
-                </div>
-                <div className="body">{children}</div>
+                <div css={css({
+                    minHeight: "calc(100vh - 150px)"
+                })}>{children}</div>
+                <Footer />
             </div>
-            <Footer />
         </>
     )
 }
