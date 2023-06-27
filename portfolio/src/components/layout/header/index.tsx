@@ -2,6 +2,7 @@ import React from "react";
 // import logo from '../../../assets/logo.png'
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
+import BallIcon from "../../common/ballIcon";
 
 const Header: React.FC = () => {
   // const [toggle, setToggle] = useState(false);
@@ -39,9 +40,10 @@ const Header: React.FC = () => {
         alignItems: "center",
         justifyContent: "space-between"
       })}>
-        <div className="DescBig">
+        {/* <div className="DescBig">
             yujaewu
-        </div>
+        </div> */}
+        <BallIcon />
         <nav>
           <ul css={css({
             display: "flex",

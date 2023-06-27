@@ -1,6 +1,6 @@
 // import Router, { useRouter } from "next/router";
 // import React from "react";
-
+/** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
 
 
@@ -17,17 +17,17 @@ function Footer() {
         backgroundColor: "rgb(25,25,25)"
       })}>
         <div css={css({
+        display: "flex",
         width: "96%",
         maxWidth: "1100px",
         height: "100%",
-        display: "flex",
+        margin: "0 auto",
         alignItems: "center",
-        justifyContent: "center",
-        margin: "0 auto"
+        justifyContent: "space-between"
       })}>
-          <p className="Desc">
+          <div className="Desc">
             © 2023 - developed by jaewu Yu
-          </p>
+          </div>
         {/* <div className=" right-0 pr-2ㄴ">
             <a className="github-button" href="https://github.com/yujaewoo">github</a>
         </div> */}
