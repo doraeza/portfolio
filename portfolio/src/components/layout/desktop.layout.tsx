@@ -4,6 +4,7 @@ import Header from "./header"
 import React from "react"
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
+import Body from "./body";
 
 const DesktopLayout = ({ children }: { children: React.ReactNode }) => {
     return (
@@ -13,9 +14,9 @@ const DesktopLayout = ({ children }: { children: React.ReactNode }) => {
                 paddingTop: "80px"
             })}>
                 <Header />
-                <div css={css({
-                    minHeight: "calc(100vh - 150px)"
-                })}>{children}</div>
+                <Body>
+                    {children}
+                </Body>
                 <Footer />
             </div>
         </>

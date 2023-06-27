@@ -4,7 +4,6 @@ import Layout from './components/layout'
 import App from './pages/App'
 import './styles/main.css';
 /** @jsxImportSource @emotion/react */
-import { css } from "@emotion/react";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { RecoilRoot } from 'recoil';
 const queryClient = new QueryClient();
