@@ -43,7 +43,13 @@ const Header: React.FC = () => {
         {/* <div className="DescBig">
             yujaewu
         </div> */}
+        <div css={css({
+          display: 'flex',
+          alignItems: 'center'
+        })}>
         <BallIcon />
+        <div className="DescBig">yujaewu</div>
+        </div>
         <nav>
           <ul css={css({
             display: "flex",
