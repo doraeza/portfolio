@@ -1,16 +1,19 @@
+import { css } from '@emotion/react';
 import CustomButton from '../components/common/CustomButton';
+import Landing from '../components/landing';
 
 
 function App() {
   return (
       // <AppRouter />
-      <>
-      <div className='DescBig'>안녕하세요!</div>
-      <div className='DescBig'>프론트엔드 개발자 </div>
-      <div className='DescBig'>유재우 입니다.</div>
-      {/* add laning contents */}
-      <CustomButton text="CustomButton"/>
-      </>
+      <div css={css({
+        marginTop: "20px"
+      })}>
+        <Landing />
+        
+        {/* add laning contents */}
+        <CustomButton text="CustomButton"/>
+      </div>
 
   )
 }
