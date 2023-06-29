@@ -21,7 +21,6 @@ const Contact: React.FC = () => {
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    // emailjs 라이브러리를 사용하여 메일 보내는 로직을 작성합니다.
     emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', formData, 'YOUR_USER_ID')
       .then((response) => {
         console.log('메일이 성공적으로 보내졌습니다.', response);
