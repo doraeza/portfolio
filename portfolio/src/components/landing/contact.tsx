@@ -21,7 +21,7 @@ const Contact: React.FC = () => {
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', formData, 'YOUR_USER_ID')
+    emailjs.send(process.env.REACT_APP_SERVICE_ID as string, process.env.REACT_APP_TEMPLATE_ID as string, formData)
       .then((response) => {
         console.log('메일이 성공적으로 보내졌습니다.', response);
       })
