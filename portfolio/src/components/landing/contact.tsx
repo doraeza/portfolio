@@ -38,20 +38,23 @@ const Contact = () => {
     <div>
         <form onSubmit={handleSubmit}>
             <div>
-                <label htmlFor="name">이름:</label>
-                <input type="text" id="name" name="name" value={formData.name} onChange={handleInputChange} />
+                <label style={{color: "#9bd65c", textShadow: "0 0 10px #9bd65c"}} htmlFor="name">이  름:</label>
+                <input style={{background: "#191919", border:"solid 1px #9bd65cd6", color: "#9bd65c", textShadow: "0 0 10px #9bd65c"}}
+                type="text" id="name" name="name" value={formData.name} onChange={handleInputChange} />
             </div>
 
             <div>
-                <label htmlFor="email">이메일:</label>
-                <input type="email" id="email" name="email" value={formData.email} onChange={handleInputChange} />
+                <label style={{color: "#9bd65c", textShadow: "0 0 10px #9bd65c"}} htmlFor="email">이메일:</label>
+                <input style={{background: "#191919", border:"solid 1px #9bd65cd6", color: "#9bd65c", textShadow: "0 0 10px #9bd65c"}}
+                type="email" id="email" name="email" value={formData.email} onChange={handleInputChange} />
             </div>
 
             <div>
-                <label htmlFor="message">메시지:</label>
-                <textarea id="message" name="message" value={formData.message} onChange={handleInputChange} />
+                <label style={{color: "#9bd65c", textShadow: "0 0 10px #9bd65c"}} htmlFor="message">메시지:</label>
+                <textarea style={{background: "#191919", border:"solid 1px #9bd65cd6", color: "#9bd65c", textShadow: "0 0 10px #9bd65c"}}
+                id="message" name="message" value={formData.message} onChange={handleInputChange} />
             </div>
-            <button type="submit">전송</button>
+            <button style={{background: "#191919", cursor: "pointer", borderRadius: "9px", border:"solid 1px #9bd65cd6", color: "#9bd65c", textShadow: "0 0 10px #9bd65c"}} type="submit">전송</button>
 
         </form>
     </div>
