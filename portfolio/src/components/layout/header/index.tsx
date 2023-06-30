@@ -55,9 +55,9 @@ const Header: React.FC = () => {
             display: "flex",
             listStyle: "none"
           })}>
-            {headerLinks.map((el:{id:string, title:string})=>{
+            {headerLinks.map((el:{id:string, title:string}, idx)=>{
               return (
-                <li css={css({
+                <li key={idx} css={css({
                   marginLeft: "30px"
                 })}>
                     <p className="Desc">{el.title}</p>

@@ -1,13 +1,10 @@
 import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
+import { ContactForm } from '../../interface/Contact';
 
-type ContactForm = {
-  name: string;
-  email: string;
-  message: string;
-};
 
-const Contact: React.FC = () => {
+
+const Contact = () => {
   const [formData, setFormData] = useState<ContactForm>({
     name: '',
     email: '',
@@ -38,21 +35,26 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div>
-        <label htmlFor="name">이름:</label>
-        <input type="text" id="name" name="name" value={formData.name} onChange={handleInputChange} />
-      </div>
-      <div>
-        <label htmlFor="email">이메일:</label>
-        <input type="email" id="email" name="email" value={formData.email} onChange={handleInputChange} />
-      </div>
-      <div>
-        <label htmlFor="message">메시지:</label>
-        <textarea id="message" name="message" value={formData.message} onChange={handleInputChange} />
-      </div>
-      <button type="submit">전송</button>
-    </form>
+    <div>
+        <form onSubmit={handleSubmit}>
+            <div>
+                <label htmlFor="name">이름:</label>
+                <input type="text" id="name" name="name" value={formData.name} onChange={handleInputChange} />
+            </div>
+
+            <div>
+                <label htmlFor="email">이메일:</label>
+                <input type="email" id="email" name="email" value={formData.email} onChange={handleInputChange} />
+            </div>
+
+            <div>
+                <label htmlFor="message">메시지:</label>
+                <textarea id="message" name="message" value={formData.message} onChange={handleInputChange} />
+            </div>
+            <button type="submit">전송</button>
+
+        </form>
+    </div>
   );
 };
 
