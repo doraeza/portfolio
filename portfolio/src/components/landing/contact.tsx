@@ -35,10 +35,10 @@ const Contact = () => {
   };
 
   return (
-    <div style={{background: "#191919", border:"solid 1px #9bd65cd6", padding: "5px", width: "350px"}}>
+    <div style={{background: "#191919", border:"solid 1px #9bd65cd6", padding: "5px", width: "350px", marginBottom: "16px", marginTop: "16px"}}>
         <form onSubmit={handleSubmit}>
             <div>
-                <label style={{color: "#9bd65c", textShadow: "0 0 10px #9bd65c"}} htmlFor="name">이  름:</label>
+                <label style={{color: "#9bd65c", textShadow: "0 0 10px #9bd65c"}} htmlFor="name">이름:</label>
                 <input style={{background: "#191919", border:"solid 1px #9bd65cd6", color: "#9bd65c", textShadow: "0 0 10px #9bd65c"}}
                 type="text" id="name" name="name" value={formData.name} onChange={handleInputChange} />
             </div>

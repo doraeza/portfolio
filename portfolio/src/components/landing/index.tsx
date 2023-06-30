@@ -1,5 +1,6 @@
 import Contact from "./contact"
 import Introduce from "./introduce"
+import OverView from "./overview"
 
 
 const Landing = () => {
@@ -7,6 +8,7 @@ const Landing = () => {
     return (
         <>
         <Introduce />
+        <OverView />
         <Contact />
         </>
     )
