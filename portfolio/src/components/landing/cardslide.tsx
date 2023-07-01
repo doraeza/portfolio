@@ -12,9 +12,11 @@ const CardSlide = () => {
             left: "calc(50% - 300px)",
             display: "flex",
         })}>
-            <div className="Card"></div>
-            
+            <div className="Card">
+
             </div>
+            
+        </div>
         </>
     )
 }

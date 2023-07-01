@@ -34,15 +34,15 @@
     border-right: .15em solid #33FF33;
   }
   .Card {
-    boxShadow: -1rem 0 3rem #000
-    transition: 0.4s ease-out
-    position: relative
-    left: 0px
-    display: flex
-    height: 280px
-    width: 200px
-    backgroundColor: #17141d
-    border-radius: 10px
+    boxShadow: -1rem 0 3rem #000;
+    transition: 0.4s ease-out;
+    position: relative;
+    left: 0px;
+    display: flex;
+    height: 280px;
+    width: 200px;
+    backgroundColor: #17141d;
+    border-radius: 10px;
     }
   .typewriter p{
     color: #66FF66;
