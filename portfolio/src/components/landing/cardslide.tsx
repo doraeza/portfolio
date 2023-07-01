@@ -13,7 +13,9 @@ const CardSlide = () => {
             display: "flex",
         })}>
             <div className="Card">
-
+                <div className="CardTitle">
+                    Test1
+                </div>
             </div>
             
         </div>

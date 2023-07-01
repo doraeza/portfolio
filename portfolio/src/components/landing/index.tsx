@@ -1,3 +1,4 @@
+import CardSlide from "./cardslide"
 import Contact from "./contact"
 import Introduce from "./introduce"
 import OverView from "./overview"
@@ -9,6 +10,7 @@ const Landing = () => {
         <>
         <Introduce />
         <OverView />
+        <CardSlide />
         <Contact />
         </>
     )
