@@ -35,7 +35,7 @@ const Contact = () => {
   };
 
   return (
-    <div style={{background: "#191919", border:"solid 1px #9bd65cd6", padding: "5px", width: "350px", marginBottom: "16px", marginTop: "16px"}}>
+    <div style={{position:"relative", background: "#191919", border:"solid 1px #9bd65cd6", padding: "5px", width: "350px", marginBottom: "16px", marginTop: "16px"}}>
         <form onSubmit={handleSubmit}>
             <div>
                 <label style={{color: "#9bd65c", textShadow: "0 0 10px #9bd65c"}} htmlFor="name">이름:</label>
