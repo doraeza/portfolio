@@ -1,6 +1,15 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react"
 
+export const containderStyle = css`
+        position: relative;
+        height: 450px;
+        width: 600px;
+        top: 60px;
+        left: calc(50% - 300px);
+        display: flex;
+    `
+
 export const cardStyle = css`
         boxShadow: -1rem 0 3rem #000;
         transition: 0.4s ease-out;

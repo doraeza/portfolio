@@ -1,32 +1,18 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react"
-import {cardStyle} from "./card.style"
+import {cardStyle, containderStyle} from "./card.style"
 const CardSlide = () => {
+    let cardArr = ["card1","card2","card3","card4"]
     return (
         <>
-        <div css={css({
-            position: "relative",
-            height: "450px",
-            width: "600px",
-            top: "60px",
-            left: "calc(50% - 300px)",
-            display: "flex",
-        })}>
-            <div css={cardStyle} >
-                <div className="CardTitle">
-                    Test1
+        <div css={containderStyle}>
+            {cardArr.map((el:string)=>{
+              return <div css={cardStyle} >
+                    <div className="CardTitle">
+                        {el}
+                    </div>
                 </div>
-            </div>
-            <div css={cardStyle} >
-                <div className="CardTitle">
-                    Test2
-                </div>
-            </div>
-            <div css={cardStyle} >
-                <div className="CardTitle">
-                    Test3
-                </div>
-            </div>
+            })}
         </div>
         </>
     )
