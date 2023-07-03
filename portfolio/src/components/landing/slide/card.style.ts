@@ -14,6 +14,7 @@ export const cardTitle = css `
         position: absolute;
         left: 20px;
         top: 15px;
+        font-size: x-large;
         color: #9bd65cd6;
         text-shadow: 0 0 10px #9bd65c;
         `
@@ -28,6 +29,7 @@ export const cardStyle = css`
         background-color: rgb(25,25,25);
         border: solid 1px #9bd65cd6;
         border-radius: 10px;
+        margin-left: -50px;
         &:hover {
             transform: translateY(-20px);
             transition: 0.4s ease-out;
