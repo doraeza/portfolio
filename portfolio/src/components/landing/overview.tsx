@@ -2,6 +2,7 @@ const OverView = () => {
     return (
         <div style={{display: "flex", flexDirection: 'column', marginTop: '30px'}}>
             <div className="DescBig">OverView</div>
+            <br />
             <div className="Desc">
                 저는 다양한 배경을 가진 동료들과 협업을 진행하며 다양한 시각과 문제해결 능력을 갖춘 엔지니어가 되기 위해 노력해왔습니다.<br/>
                 이러한 경험을 바탕으로 사용자 중심의 웹 애플리케이션 개발에 힘 썼으며,<br/>

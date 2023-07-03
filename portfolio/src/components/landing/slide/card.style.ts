@@ -9,7 +9,14 @@ export const containderStyle = css`
         left: calc(50% - 300px);
         display: flex;
     `
-
+export const cardTitle = css `
+        font-weight: 300;
+        position: absolute;
+        left: 20px;
+        top: 15px;
+        color: #9bd65cd6;
+        text-shadow: 0 0 10px #9bd65c;
+        `
 export const cardStyle = css`
         boxShadow: -1rem 0 3rem #000;
         transition: 0.4s ease-out;
