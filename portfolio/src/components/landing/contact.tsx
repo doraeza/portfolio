@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { ContactForm } from '../../interface/Contact';
 import SectionWrapper from '../hoc/SectionWrapper';
-
+import { motion } from 'framer-motion';
+import { slideIn } from '../utils/motion';
 
 
 const Contact = () => {
@@ -36,8 +37,12 @@ const Contact = () => {
   };
 
   return (
+    <motion.div
+        variants={slideIn('left', 'tween', 0.2, 1)}
+        className="flex-[0.75] bg-jet p-8 rounded-2xl">
     <div style={{position:"relative", background: "#191919", border:"solid 1px #9bd65cd6", padding: "5px", width: "350px", marginBottom: "16px", marginTop: "16px"}}>
-        <form onSubmit={handleSubmit}>
+      
+          <form onSubmit={handleSubmit}>
             <div>
                 <label style={{color: "#9bd65c", textShadow: "0 0 10px #9bd65c"}} htmlFor="name">이름:</label>
                 <input style={{background: "#191919", border:"solid 1px #9bd65cd6", color: "#9bd65c", textShadow: "0 0 10px #9bd65c"}}
@@ -57,8 +62,10 @@ const Contact = () => {
             </div>
             <button style={{marginTop: "15px",background: "#191919", cursor: "pointer", borderRadius: "9px", border:"solid 1px #9bd65cd6", color: "#9bd65c", textShadow: "0 0 10px #9bd65c"}} type="submit">전송</button>
 
-        </form>
+          </form>
     </div>
+    </motion.div>
+
   );
 };
 
