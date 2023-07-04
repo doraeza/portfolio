@@ -5,8 +5,8 @@ const CardSlide = () => {
     return (
         <>
         <div css={containderStyle}>
-            {cardArr.map((el:string)=>{
-              return <div css={cardStyle} >
+            {cardArr.map((el:string, idx:number)=>{
+              return <div key={idx} css={cardStyle} >
                     <div css={cardTitle}>
                         {el}
                     </div>

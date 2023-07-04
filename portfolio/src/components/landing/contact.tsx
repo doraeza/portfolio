@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { ContactForm } from '../../interface/Contact';
+import SectionWrapper from '../hoc/SectionWrapper';
 
 
 
@@ -61,4 +62,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default SectionWrapper(Contact, 'contact');
