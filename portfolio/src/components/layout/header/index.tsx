@@ -24,6 +24,7 @@ const Header: React.FC = () => {
   ];
   return (
     <header css={css({
+      zIndex: 999,
       position: "fixed",
       left: 0,
       top: 0,
