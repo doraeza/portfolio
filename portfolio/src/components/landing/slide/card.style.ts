@@ -22,10 +22,9 @@ export const cardStyle = css`
         boxShadow: -1rem 0 3rem #000;
         transition: 0.4s ease-out;
         position: relative;
-        left: 0px;
         display: flex;
         height: 280px;
-        width: 200px;
+        width: 300px;
         background-color: rgb(25,25,25);
         border: solid 1px #9bd65cd6;
         border-radius: 10px;

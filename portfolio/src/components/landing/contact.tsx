@@ -40,8 +40,9 @@ const Contact = () => {
     <motion.div
         variants={slideIn('left', 'tween', 0.2, 1)}
         className="flex-[0.75] bg-jet p-8 rounded-2xl">
+    <div className="DescBig">Contact</div>
+
     <div style={{position:"relative", background: "#191919", border:"solid 1px #9bd65cd6", padding: "5px", width: "350px", marginBottom: "16px", marginTop: "16px", borderRadius: "10px"}}>
-      
           <form onSubmit={handleSubmit}>
             <div>
                 <label style={{color: "#9bd65c", textShadow: "0 0 10px #9bd65c"}} htmlFor="name">이름:</label>
