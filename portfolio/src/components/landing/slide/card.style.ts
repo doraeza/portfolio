@@ -31,7 +31,7 @@ export const cardStyle = css`
         border-radius: 10px;
         margin-left: -50px;
         &:hover {
-            transform: translateY(-20px);
+            transform: translateY(-40px);
             transition: 0.4s ease-out;
         }
         &:not:first-child {
