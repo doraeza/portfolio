@@ -8,9 +8,9 @@ function useOutSideClick(ref:any, callback:any) {
       }
     };
 
-    window.addEventListener('mousedown', handleClick);
+    window.addEventListener('mousedown', ()=>{handleClick});
 
-    return () => window.removeEventListener('mousedown', handleClick);
+    return () => window.removeEventListener('mousedown', ()=>{handleClick});
   }, [ref, callback]);
 }
 
