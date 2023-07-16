@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const SetTimeHover = () => {
+const SetTimeHover = ({ children }: { children: React.ReactNode }) => {
 
     const [hovered, setHovered] = useState(false);
     
@@ -22,7 +22,7 @@ const SetTimeHover = () => {
   
     return (
       <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-      
+        {children}
       </div>
     )
   }
